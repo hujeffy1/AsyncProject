@@ -48,7 +48,7 @@ const AllGen1 = () => {
                       : pkmn.types[0].type.name
                   }
                 >
-                  <Link to={`/gen1/${pkmn.id}`}>
+                  <Link to={`/pokemon/${pkmn.id}`}>
                     {pkmn.name.charAt(0).toUpperCase() + pkmn.name.slice(1)}
                   </Link>
                   <div>
@@ -67,7 +67,7 @@ const AllGen1 = () => {
                       </p>
                     )}
                   </div>
-                  <Link to={`/gen1/${pkmn.id}`}>
+                  <Link to={`/pokemon/${pkmn.id}`}>
                     <img src={pkmn.sprites.front_default} />
                   </Link>
                 </div>

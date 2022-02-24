@@ -23,7 +23,7 @@ const Routes = () => {
       {isLoggedIn ? (
         <Switch>
           <Route exact path="/gen1" component={AllGen1} />
-          <Route path="/gen1/:id" component={SinglePokemon} />
+          <Route path="/pokemon/:id" component={SinglePokemon} />
           <Route path="/home" component={Home} />
           <Redirect to="/home" />
         </Switch>
