@@ -2,23 +2,25 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const AllGen1 = () => {
+const AllGen6 = () => {
   const [pokemon, setPokemon] = useState([]);
   let isMounted = true;
 
   function fetchPokemon() {
     let pokemonArr = [];
-    axios.get('https://pokeapi.co/api/v2/pokemon?limit=151').then((res) => {
-      res.data.results.forEach((pkmn) => {
-        let url = pkmn.url;
-        axios.get(url).then((res) => {
-          pokemonArr.push(res.data);
-          if (isMounted) {
-            setPokemon([...pokemon, ...pokemonArr]);
-          }
+    axios
+      .get('https://pokeapi.co/api/v2/pokemon?offset=649&limit=72')
+      .then((res) => {
+        res.data.results.forEach((pkmn) => {
+          let url = pkmn.url;
+          axios.get(url).then((res) => {
+            pokemonArr.push(res.data);
+            if (isMounted) {
+              setPokemon([...pokemon, ...pokemonArr]);
+            }
+          });
         });
       });
-    });
   }
 
   useEffect(() => {
@@ -78,4 +80,4 @@ const AllGen1 = () => {
   );
 };
 
-export default AllGen1;
+export default AllGen6;

@@ -23,12 +23,12 @@ const Navbar = () => {
             <div>
               <Link to="/gen1">Generation 1</Link>
               <Link to="/gen2">Generation 2</Link>
-              <Link to="/gen2">Generation 3</Link>
-              <Link to="/gen2">Generation 4</Link>
-              <Link to="/gen2">Generation 5</Link>
-              <Link to="/gen2">Generation 6</Link>
-              <Link to="/gen2">Generation 7</Link>
-              <Link to="/gen2">Generation 8</Link>
+              <Link to="/gen3">Generation 3</Link>
+              <Link to="/gen4">Generation 4</Link>
+              <Link to="/gen5">Generation 5</Link>
+              <Link to="/gen6">Generation 6</Link>
+              <Link to="/gen7">Generation 7</Link>
+              <Link to="/gen8">Generation 8</Link>
             </div>
           </div>
         ) : (
