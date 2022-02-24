@@ -19,3 +19,639 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+
+#gen1mon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#singleGen1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: groove;
+  height: 160px;
+  width: 120px;
+}
+
+.normal {
+  background-color: rgb(168, 168, 120);
+}
+
+.grass {
+  background-color: rgb(120, 200, 80);
+}
+
+.fire {
+  background-color: rgb(240, 128, 48);
+}
+
+.water {
+  background-color: rgb(104, 144, 240);
+}
+
+.electric {
+  background-color: rgb(248, 208, 48);
+}
+
+.poison {
+  background-color: rgb(160, 64, 160);
+}
+
+.ice {
+  background-color: rgb(152, 216, 216);
+}
+
+.fighting {
+  background-color: rgb(192, 48, 40);
+}
+
+.ground {
+  background-color: rgb(244, 192, 104);
+}
+
+.flying {
+  background-color: rgb(168, 144, 240);
+}
+
+.psychic {
+  background-color: rgb(248, 88, 136);
+}
+
+.bug {
+  background-color: rgb(168, 184, 32);
+}
+
+.rock {
+  background-color: rgb(184, 160, 56);
+}
+
+.ghost {
+  background-color: rgb(112, 88, 152);
+}
+
+.dragon {
+  background-color: rgb(112, 56, 248);
+}
+
+.dark {
+  background-color: rgb(112, 88, 72);
+}
+
+.steel {
+  background-color: rgb(184, 184, 208);
+}
+
+.fairy {
+  background-color: rgb(255, 155, 225);
+}
+
+.grass.poison {
+  background-image: linear-gradient(rgb(120, 200, 80), rgb(160, 64, 160));
+}
+
+.normal.flying {
+  background-image: linear-gradient(rgb(168, 168, 120), rgb(168, 144, 240));
+}
+
+.bug.flying {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(168, 144, 240));
+}
+
+.bug.poison {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(160, 64, 160));
+}
+
+.rock.water {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(104, 144, 240));
+}
+
+.rock.ground {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(244, 192, 104));
+}
+
+.water.ground {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(244, 192, 104));
+}
+
+.psychic.flying {
+  background-image: linear-gradient(rgb(248, 88, 136), rgb(168, 144, 240));
+}
+
+.steel.psychic {
+  background-image: linear-gradient(rgb(184, 184, 208), rgb(248, 88, 136));
+}
+
+.water.flying {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(168, 144, 240));
+}
+
+.psychic.fairy {
+  background-image: linear-gradient(rgb(248, 88, 136), rgb(255, 155, 225));
+}
+
+.steel.rock {
+  background-image: linear-gradient(rgb(184, 184, 208), rgb(184, 160, 56));
+}
+
+.water.ice {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(152, 216, 216));
+}
+
+.grass.flying {
+  background-image: linear-gradient(rgb(120, 200, 80), rgb(168, 144, 240));
+}
+
+.poison.dark {
+  background-image: linear-gradient(rgb(160, 64, 160), rgb(112, 88, 72));
+}
+
+.ground.ghost {
+  background-image: linear-gradient(rgb(244, 192, 104), rgb(112, 88, 152));
+}
+
+.ground.dragon {
+  background-image: linear-gradient(rgb(244, 192, 104), rgb(112, 56, 248));
+}
+
+.bug.rock {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(184, 160, 56));
+}
+
+.bug.steel {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(184, 184, 208));
+}
+
+.bug.grass {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(120, 200, 80));
+}
+
+.ghost.fire {
+  background-image: linear-gradient(rgb(112, 88, 152), rgb(240, 128, 48));
+}
+
+.ghost.grass {
+  background-image: linear-gradient(rgb(112, 88, 152), rgb(120, 200, 80));
+}
+
+.fire.fighting {
+  background-image: linear-gradient(rgb(240, 128, 48), rgb(192, 48, 40));
+}
+
+.fire.flying {
+  background-image: linear-gradient(rgb(240, 128, 48), rgb(168, 144, 240));
+}
+
+.water.poison {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(160, 64, 160));
+}
+
+.water.dark {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(112, 88, 72));
+}
+
+.dragon.flying {
+  background-image: linear-gradient(rgb(112, 56, 248), rgb(168, 144, 240));
+}
+
+.dark.flying {
+  background-image: linear-gradient(rgb(112, 88, 72), rgb(168, 144, 240));
+}
+
+.normal.psychic {
+  background-image: linear-gradient(rgb(168, 168, 120), rgb(248, 88, 136));
+}
+
+.normal.fairy {
+  background-image: linear-gradient(rgb(168, 168, 120), rgb(255, 155, 225));
+}
+
+.bug.water {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(104, 144, 240));
+}
+
+.steel.ground {
+  background-image: linear-gradient(rgb(184, 184, 208), rgb(244, 192, 104));
+}
+
+.fire.rock {
+  background-image: linear-gradient(rgb(240, 128, 48), rgb(184, 160, 56));
+}
+
+.water.psychic {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(248, 88, 136));
+}
+
+.grass.fighting {
+  background-image: linear-gradient(rgb(120, 200, 80), rgb(192, 48, 40));
+}
+
+.grass.dragon {
+  background-image: linear-gradient(rgb(120, 200, 80), rgb(112, 56, 248));
+}
+
+.grass.fairy {
+  background-image: linear-gradient(rgb(120, 200, 80), rgb(255, 155, 225));
+}
+
+.electric.flying {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(168, 144, 240));
+}
+
+.ice.psychic {
+  background-image: linear-gradient(rgb(152, 216, 216), rgb(248, 88, 136));
+}
+
+.dark.normal {
+  background-image: linear-gradient(rgb(112, 88, 72), rgb(168, 168, 120));
+}
+
+.normal.fighting {
+  background-image: linear-gradient(rgb(168, 168, 120), rgb(192, 48, 40));
+}
+
+.fighting.psychic {
+  background-image: linear-gradient(rgb(192, 48, 40), rgb(248, 88, 136));
+}
+
+.poison.fighting {
+  background-image: linear-gradient(rgb(160, 64, 160), rgb(192, 48, 40));
+}
+
+.rock.flying {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(168, 144, 240));
+}
+
+.bug.fire {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(240, 128, 48));
+}
+
+.bug.electric {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(248, 208, 48));
+}
+
+.ghost.dragon {
+  background-image: linear-gradient(rgb(112, 88, 152), rgb(112, 56, 248));
+}
+
+.steel.dragon {
+  background-image: linear-gradient(rgb(184, 184, 208), rgb(112, 56, 248));
+}
+
+.steel.fairy {
+  background-image: linear-gradient(rgb(184, 184, 208), rgb(255, 155, 225));
+}
+
+.water.fairy {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(255, 155, 225));
+}
+
+.grass.psychic {
+  background-image: linear-gradient(rgb(120, 200, 80), rgb(248, 88, 136));
+}
+
+.grass.dark {
+  background-image: linear-gradient(rgb(120, 200, 80), rgb(112, 88, 72));
+}
+
+.electric.steel {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(184, 184, 208));
+}
+
+.psychic.ghost {
+  background-image: linear-gradient(rgb(248, 88, 136), rgb(112, 88, 152));
+}
+
+.dark.dragon {
+  background-image: linear-gradient(rgb(112, 88, 72), rgb(112, 56, 248));
+}
+
+.dark.fighting {
+  background-image: linear-gradient(rgb(112, 88, 72), rgb(192, 48, 40));
+}
+
+.fighting.steel {
+  background-image: linear-gradient(rgb(192, 48, 40), rgb(184, 184, 208));
+}
+
+.poison.flying {
+  background-image: linear-gradient(rgb(160, 64, 160), rgb(168, 144, 240));
+}
+
+.poison.dragon {
+  background-image: linear-gradient(rgb(160, 64, 160), rgb(112, 56, 248));
+}
+
+.ground.flying {
+  background-image: linear-gradient(rgb(244, 192, 104), rgb(168, 144, 240));
+}
+
+.ground.dark {
+  background-image: linear-gradient(rgb(244, 192, 104), rgb(112, 88, 72));
+}
+
+.rock.electric {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(248, 208, 48));
+}
+
+.rock.ice {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(152, 216, 216));
+}
+
+.bug.fighting {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(192, 48, 40));
+}
+
+.ghost.flying {
+  background-image: linear-gradient(rgb(112, 88, 152), rgb(168, 144, 240));
+}
+
+.ghost.poison {
+  background-image: linear-gradient(rgb(112, 88, 152), rgb(160, 64, 160));
+}
+
+.steel.flying {
+  background-image: linear-gradient(rgb(184, 184, 208), rgb(168, 144, 240));
+}
+
+.steel.ghost {
+  background-image: linear-gradient(rgb(184, 184, 208), rgb(112, 88, 152));
+}
+
+.fire.ground {
+  background-image: linear-gradient(rgb(240, 128, 48), rgb(244, 192, 104));
+}
+
+.water.fighting {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(192, 48, 40));
+}
+
+.water.ghost {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(112, 88, 152));
+}
+
+.water.grass {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(120, 200, 80));
+}
+
+.water.electric {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(248, 208, 48));
+}
+
+.water.dragon {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(112, 56, 248));
+}
+
+.grass.steel {
+  background-image: linear-gradient(rgb(120, 200, 80), rgb(184, 184, 208));
+}
+
+.electric.grass {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(120, 200, 80));
+}
+
+.psychic.fire {
+  background-image: linear-gradient(rgb(248, 88, 136), rgb(240, 128, 48));
+}
+
+.ice.ground {
+  background-image: linear-gradient(rgb(152, 216, 216), rgb(244, 192, 104));
+}
+
+.dragon.fire {
+  background-image: linear-gradient(rgb(112, 56, 248), rgb(240, 128, 48));
+}
+
+.dragon.electric {
+  background-image: linear-gradient(rgb(112, 56, 248), rgb(248, 208, 48));
+}
+
+.dragon.psychic {
+  background-image: linear-gradient(rgb(112, 56, 248), rgb(248, 88, 136));
+}
+
+.dark.fire {
+  background-image: linear-gradient(rgb(112, 88, 72), rgb(240, 128, 48));
+}
+
+.dark.psychic {
+  background-image: linear-gradient(rgb(112, 88, 72), rgb(248, 88, 136));
+}
+
+.dark.fairy {
+  background-image: linear-gradient(rgb(112, 88, 72), rgb(255, 155, 225));
+}
+
+.fairy.flying {
+  background-image: linear-gradient(rgb(255, 155, 225), rgb(168, 144, 240));
+}
+
+.normal.ground {
+  background-image: linear-gradient(rgb(168, 168, 120), rgb(244, 192, 104));
+}
+
+.normal.ghost {
+  background-image: linear-gradient(rgb(168, 168, 120), rgb(112, 88, 152));
+}
+
+.normal.grass {
+  background-image: linear-gradient(rgb(168, 168, 120), rgb(120, 200, 80));
+}
+
+.fighting.flying {
+  background-image: linear-gradient(rgb(192, 48, 40), rgb(168, 144, 240));
+}
+
+.poison.ground {
+  background-image: linear-gradient(rgb(160, 64, 160), rgb(244, 192, 104));
+}
+
+.poison.fire {
+  background-image: linear-gradient(rgb(160, 64, 160), rgb(240, 128, 48));
+}
+
+.poison.psychic {
+  background-image: linear-gradient(rgb(160, 64, 160), rgb(248, 88, 136));
+}
+
+.ground.psychic {
+  background-image: linear-gradient(rgb(244, 192, 104), rgb(248, 88, 136));
+}
+
+.rock.grass {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(120, 200, 80));
+}
+
+.rock.psychic {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(248, 88, 136));
+}
+
+.rock.dragon {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(112, 56, 248));
+}
+
+.rock.fairy {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(255, 155, 225));
+}
+
+.bug.ground {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(244, 192, 104));
+}
+
+.bug.psychic {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(248, 88, 136));
+}
+
+.bug.fairy {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(255, 155, 225));
+}
+
+.fire.normal {
+  background-image: linear-gradient(rgb(240, 128, 48), rgb(168, 168, 120));
+}
+
+.grass.ice {
+  background-image: linear-gradient(rgb(120, 200, 80), rgb(152, 216, 216));
+}
+
+.electric.normal {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(168, 168, 120));
+}
+
+.electric.poison {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(160, 64, 160));
+}
+
+.electric.ice {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(152, 216, 216));
+}
+
+.electric.fairy {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(255, 155, 225));
+}
+
+.ice.flying {
+  background-image: linear-gradient(rgb(152, 216, 216), rgb(168, 144, 240));
+}
+
+.ice.bug {
+  background-image: linear-gradient(rgb(152, 216, 216), rgb(168, 184, 32));
+}
+
+.ice.steel {
+  background-image: linear-gradient(rgb(152, 216, 216), rgb(184, 184, 208));
+}
+
+.dragon.fighting {
+  background-image: linear-gradient(rgb(112, 56, 248), rgb(192, 48, 40));
+}
+
+.dark.ghost {
+  background-image: linear-gradient(rgb(112, 88, 72), rgb(112, 88, 152));
+}
+
+.dark.steel {
+  background-image: linear-gradient(rgb(112, 88, 72), rgb(184, 184, 208));
+}
+
+.dark.ice {
+  background-image: linear-gradient(rgb(112, 88, 72), rgb(152, 216, 216));
+}
+
+.normal.water {
+  background-image: linear-gradient(rgb(168, 168, 120), rgb(104, 144, 240));
+}
+
+.normal.dragon {
+  background-image: linear-gradient(rgb(168, 168, 120), rgb(112, 56, 248));
+}
+
+.fighting.ghost {
+  background-image: linear-gradient(rgb(192, 48, 40), rgb(112, 88, 152));
+}
+
+.fighting.ice {
+  background-image: linear-gradient(rgb(192, 48, 40), rgb(152, 216, 216));
+}
+
+.poison.fairy {
+  background-image: linear-gradient(rgb(160, 64, 160), rgb(255, 155, 225));
+}
+
+.ground.electric {
+  background-image: linear-gradient(rgb(244, 192, 104), rgb(248, 208, 48));
+}
+
+.rock.fighting {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(192, 48, 40));
+}
+
+.rock.poison {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(160, 64, 160));
+}
+
+.rock.dark {
+  background-image: linear-gradient(rgb(184, 160, 56), rgb(112, 88, 72));
+}
+
+.bug.ghost {
+  background-image: linear-gradient(rgb(168, 184, 32), rgb(112, 88, 152));
+}
+
+.ghost.fairy {
+  background-image: linear-gradient(rgb(112, 88, 152), rgb(255, 155, 225));
+}
+
+.fire.steel {
+  background-image: linear-gradient(rgb(240, 128, 48), rgb(184, 184, 208));
+}
+
+.fire.water {
+  background-image: linear-gradient(rgb(240, 128, 48), rgb(104, 144, 240));
+}
+
+.water.steel {
+  background-image: linear-gradient(rgb(104, 144, 240), rgb(184, 184, 208));
+}
+
+.grass.ground {
+  background-image: linear-gradient(rgb(120, 200, 80), rgb(244, 192, 104));
+}
+
+.electric.ghost {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(112, 88, 152));
+}
+
+.electric.fire {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(240, 128, 48));
+}
+
+.electric.psychic {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(248, 88, 136));
+}
+
+.electric.dark {
+  background-image: linear-gradient(rgb(248, 208, 48), rgb(112, 88, 72));
+}
+
+.ice.ghost {
+  background-image: linear-gradient(rgb(152, 216, 216), rgb(112, 88, 152));
+}
+
+.ice.fire {
+  background-image: linear-gradient(rgb(152, 216, 216), rgb(240, 128, 48));
+}
+
+.ice.fairy {
+  background-image: linear-gradient(rgb(152, 216, 216), rgb(255, 155, 225));
+}
+
+.dragon.ice {
+  background-image: linear-gradient(rgb(112, 56, 248), rgb(152, 216, 216));
+}
+
+.dragon.fairy {
+  background-image: linear-gradient(rgb(112, 56, 248), rgb(255, 155, 225));
+}

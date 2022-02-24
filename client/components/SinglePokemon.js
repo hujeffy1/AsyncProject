@@ -20,6 +20,9 @@ const SinglePokemon = (props) => {
       ? (e.target.src = singlePokemon.sprites.front_default)
       : (e.target.src = singlePokemon.sprites.front_shiny);
   };
+
+  console.log(singlePokemon);
+
   return (
     <div>
       {singlePokemon.name ? (
@@ -65,6 +68,21 @@ const SinglePokemon = (props) => {
                       ' (Hidden Ability)'}
                 </p>
               );
+            })}
+          </div>
+          <div>
+            Base Stats:
+            <p>HP: {singlePokemon.stats[0].base_stat}</p>
+            <p>ATT: {singlePokemon.stats[1].base_stat}</p>
+            <p>DEF: {singlePokemon.stats[2].base_stat}</p>
+            <p>SP.ATT: {singlePokemon.stats[3].base_stat}</p>
+            <p>SP.DEF: {singlePokemon.stats[4].base_stat}</p>
+            <p>SPEED: {singlePokemon.stats[5].base_stat}</p>
+          </div>
+          <div>
+            Moves:
+            {singlePokemon.moves.map((pkmn, idx) => {
+              return <p key={idx}>{pkmn.move.name}</p>;
             })}
           </div>
         </div>

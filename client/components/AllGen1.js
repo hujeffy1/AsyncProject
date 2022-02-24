@@ -31,7 +31,7 @@ const AllGen1 = () => {
   }, []);
 
   return (
-    <div>
+    <div id="gen1mon">
       {pokemon
         ? pokemon
             .sort((a, b) => {
@@ -39,7 +39,15 @@ const AllGen1 = () => {
             })
             .map((pkmn) => {
               return (
-                <div key={pkmn.id}>
+                <div
+                  key={pkmn.id}
+                  id="singleGen1"
+                  className={
+                    pkmn.types.length > 1
+                      ? pkmn.types[0].type.name + ' ' + pkmn.types[1].type.name
+                      : pkmn.types[0].type.name
+                  }
+                >
                   <Link to={`/gen1/${pkmn.id}`}>
                     {pkmn.name.charAt(0).toUpperCase() + pkmn.name.slice(1)}
                   </Link>
