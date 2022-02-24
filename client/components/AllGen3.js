@@ -4,6 +4,7 @@ import axios from 'axios';
 
 const AllGen3 = () => {
   const [pokemon, setPokemon] = useState([]);
+  const [value, setValue] = useState('');
   let isMounted = true;
 
   function fetchPokemon() {
@@ -32,12 +33,28 @@ const AllGen3 = () => {
     };
   }, []);
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    setValue(e.target.value);
+  };
+
   return (
-    <div class="pokemon">
+    <div className="pokemon">
+      <input
+        className="searchBar"
+        type="search"
+        value={value}
+        onChange={handleSearch}
+      />
       {pokemon
         ? pokemon
             .sort((a, b) => {
               return a.id - b.id;
+            })
+            .filter((pkmn) => {
+              if (pkmn.name.includes(value)) {
+                return pkmn;
+              }
             })
             .map((pkmn) => {
               return (
