@@ -258,6 +258,11 @@ const AllGen7 = () => {
               );
             })
         : null}
+      <Link to="/gen7/quiz">
+        <button className="quizButton" type="button">
+          Quiz
+        </button>
+      </Link>
     </div>
   );
 };

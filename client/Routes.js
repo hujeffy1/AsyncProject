@@ -14,6 +14,12 @@ import AllGen7 from './components/AllGen7';
 import AllGen8 from './components/AllGen8';
 import QuizGen1 from './components/QuizGen1';
 import QuizGen2 from './components/QuizGen2';
+import QuizGen3 from './components/QuizGen3';
+import QuizGen4 from './components/QuizGen4';
+import QuizGen5 from './components/QuizGen5';
+import QuizGen6 from './components/QuizGen6';
+import QuizGen7 from './components/QuizGen7';
+import QuizGen8 from './components/QuizGen8';
 import SinglePokemon from './components/SinglePokemon';
 
 const Routes = () => {
@@ -36,11 +42,17 @@ const Routes = () => {
           <Route exact path="/gen2" component={AllGen2} />
           <Route path="/gen2/quiz" component={QuizGen2} />
           <Route exact path="/gen3" component={AllGen3} />
+          <Route path="/gen3/quiz" component={QuizGen3} />
           <Route exact path="/gen4" component={AllGen4} />
+          <Route path="/gen4/quiz" component={QuizGen4} />
           <Route exact path="/gen5" component={AllGen5} />
+          <Route path="/gen5/quiz" component={QuizGen5} />
           <Route exact path="/gen6" component={AllGen6} />
+          <Route path="/gen6/quiz" component={QuizGen6} />
           <Route exact path="/gen7" component={AllGen7} />
+          <Route path="/gen7/quiz" component={QuizGen7} />
           <Route exact path="/gen8" component={AllGen8} />
+          <Route path="/gen8/quiz" component={QuizGen8} />
           <Route path="/pokemon/:id" component={SinglePokemon} />
           <Route path="/home" component={Home} />
           <Redirect to="/home" />

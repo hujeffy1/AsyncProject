@@ -250,6 +250,11 @@ const AllGen6 = () => {
               );
             })
         : null}
+      <Link to="/gen6/quiz">
+        <button className="quizButton" type="button">
+          Quiz
+        </button>
+      </Link>
     </div>
   );
 };
