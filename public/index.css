@@ -27,6 +27,20 @@ form div {
   align-content: center;
 }
 
+button {
+  height: 20px;
+  width: 60px;
+  border-radius: 10%;
+}
+
+.typeFilter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: absolute;
+  top: 175px;
+}
+
 .searchBar {
   position: absolute;
   top: 146px;
