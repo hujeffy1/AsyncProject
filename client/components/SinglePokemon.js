@@ -21,8 +21,6 @@ const SinglePokemon = (props) => {
       : (e.target.src = singlePokemon.sprites.front_shiny);
   };
 
-  console.log(singlePokemon);
-
   return (
     <div>
       {singlePokemon.name ? (

@@ -8,19 +8,21 @@ const AllGen1 = () => {
   const [type, setType] = useState('');
   let isMounted = true;
 
-  function fetchPokemon() {
+  async function fetchPokemon() {
     let pokemonArr = [];
-    axios.get('https://pokeapi.co/api/v2/pokemon?limit=151').then((res) => {
-      res.data.results.forEach((pkmn) => {
-        let url = pkmn.url;
-        axios.get(url).then((res) => {
-          pokemonArr.push(res.data);
-          if (isMounted) {
-            setPokemon([...pokemon, ...pokemonArr]);
-          }
+    await axios
+      .get('https://pokeapi.co/api/v2/pokemon?limit=151')
+      .then((res) => {
+        res.data.results.forEach(async (pkmn) => {
+          let url = pkmn.url;
+          await axios.get(url).then((res) => {
+            pokemonArr.push(res.data);
+            if (isMounted) {
+              setPokemon([...pokemon, ...pokemonArr]);
+            }
+          });
         });
       });
-    });
   }
 
   useEffect(() => {

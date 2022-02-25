@@ -224,7 +224,16 @@ const AllGen7 = () => {
                   }
                 >
                   <Link to={`/pokemon/${pkmn.id}`}>
-                    {pkmn.name.charAt(0).toUpperCase() + pkmn.name.slice(1)}
+                    {pkmn.name.charAt(0).toUpperCase() +
+                      pkmn.name.slice(1).split('-')[0] +
+                      (pkmn.name.split('-')[1] === 'o' ||
+                      pkmn.name.split('-')[1] === 'null' ||
+                      pkmn.name.split('-')[1] === 'koko' ||
+                      pkmn.name.split('-')[1] === 'lele' ||
+                      pkmn.name.split('-')[1] === 'bulu' ||
+                      pkmn.name.split('-')[1] === 'fini'
+                        ? '-' + pkmn.name.split('-')[1]
+                        : '')}
                   </Link>
                   <div>
                     {pkmn.types.length > 1 ? (

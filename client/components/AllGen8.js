@@ -224,7 +224,11 @@ const AllGen8 = () => {
                   }
                 >
                   <Link to={`/pokemon/${pkmn.id}`}>
-                    {pkmn.name.charAt(0).toUpperCase() + pkmn.name.slice(1)}
+                    {pkmn.name.charAt(0).toUpperCase() +
+                      pkmn.name.slice(1).split('-')[0] +
+                      (pkmn.name.split('-')[1] === 'rime'
+                        ? '-' + pkmn.name.split('-')[1]
+                        : '')}
                   </Link>
                   <div>
                     {pkmn.types.length > 1 ? (
