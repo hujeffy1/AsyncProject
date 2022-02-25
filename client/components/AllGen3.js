@@ -197,7 +197,7 @@ const AllGen3 = () => {
               return a.id - b.id;
             })
             .filter((pkmn) => {
-              if (pkmn.name.includes(value)) {
+              if (pkmn.name.includes(value.toLowerCase())) {
                 return pkmn;
               }
             })
