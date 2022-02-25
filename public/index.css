@@ -33,6 +33,12 @@ button {
   border-radius: 10%;
 }
 
+.quizButton {
+  position: absolute;
+  top: 148px;
+  left: 1620px;
+}
+
 .typeFilter {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +55,24 @@ button {
   width: 200px;
 }
 
-#singleGen1 {
+.inputBar {
+  position: absolute;
+  top: 146px;
+  left: 1691px;
+  height: 25px;
+  width: 200px;
+}
+
+#allGen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: groove;
+  height: 170px;
+  width: 160px;
+}
+
+#quizGen {
   display: flex;
   flex-direction: column;
   align-items: center;

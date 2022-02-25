@@ -12,6 +12,7 @@ import AllGen5 from './components/AllGen5';
 import AllGen6 from './components/AllGen6';
 import AllGen7 from './components/AllGen7';
 import AllGen8 from './components/AllGen8';
+import QuizGen1 from './components/QuizGen1';
 import SinglePokemon from './components/SinglePokemon';
 
 const Routes = () => {
@@ -30,6 +31,7 @@ const Routes = () => {
       {isLoggedIn ? (
         <Switch>
           <Route exact path="/gen1" component={AllGen1} />
+          <Route path="/gen1/quiz" component={QuizGen1} />
           <Route exact path="/gen2" component={AllGen2} />
           <Route exact path="/gen3" component={AllGen3} />
           <Route exact path="/gen4" component={AllGen4} />

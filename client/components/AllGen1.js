@@ -216,7 +216,7 @@ const AllGen1 = () => {
               return (
                 <div
                   key={pkmn.id}
-                  id="singleGen1"
+                  id="allGen"
                   className={
                     pkmn.types.length > 1
                       ? pkmn.types[0].type.name + ' ' + pkmn.types[1].type.name
@@ -249,6 +249,11 @@ const AllGen1 = () => {
               );
             })
         : null}
+      <Link to="/gen1/quiz">
+        <button className="quizButton" type="button">
+          Quiz
+        </button>
+      </Link>
     </div>
   );
 };

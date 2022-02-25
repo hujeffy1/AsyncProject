@@ -216,7 +216,7 @@ const AllGen5 = () => {
               return (
                 <div
                   key={pkmn.id}
-                  id="singleGen1"
+                  id="allGen"
                   className={
                     pkmn.types.length > 1
                       ? pkmn.types[0].type.name + ' ' + pkmn.types[1].type.name
