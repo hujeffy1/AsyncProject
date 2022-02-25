@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const QuizGen1 = () => {
+const QuizGen2 = () => {
   const [pokemon, setPokemon] = useState([]);
   const [guessPokemon, setGuessPokemon] = useState([]);
   const [value, setValue] = useState('');
@@ -12,7 +12,7 @@ const QuizGen1 = () => {
   async function fetchPokemon() {
     let pokemonArr = [];
     await axios
-      .get('https://pokeapi.co/api/v2/pokemon?limit=151')
+      .get('https://pokeapi.co/api/v2/pokemon?offset=151&limit=100')
       .then((res) => {
         res.data.results.forEach(async (pkmn) => {
           let url = pkmn.url;
@@ -114,4 +114,4 @@ const QuizGen1 = () => {
   );
 };
 
-export default QuizGen1;
+export default QuizGen2;

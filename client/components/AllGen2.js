@@ -249,6 +249,11 @@ const AllGen2 = () => {
               );
             })
         : null}
+      <Link to="/gen2/quiz">
+        <button className="quizButton" type="button">
+          Quiz
+        </button>
+      </Link>
     </div>
   );
 };

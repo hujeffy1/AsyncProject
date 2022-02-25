@@ -55,10 +55,17 @@ button {
   width: 200px;
 }
 
+#guessForm {
+  position: fixed;
+  top: 147px;
+  left: 1640px;
+  color: green;
+}
+
 .inputBar {
-  position: absolute;
-  top: 146px;
-  left: 1691px;
+  position: fixed;
+  top: 140px;
+  left: 1683px;
   height: 25px;
   width: 200px;
 }
